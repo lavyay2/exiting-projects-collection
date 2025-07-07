@@ -1,0 +1,2387 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "private_outputs": true,
+      "provenance": [],
+      "collapsed_sections": [
+        "vncDsAP0Gaoa",
+        "FJNUwmbgGyua",
+        "w6K7xa23Elo4",
+        "yQaldy8SH6Dl",
+        "PH-0ReGfmX4f",
+        "mDgbUHAGgjLW",
+        "O_i_v8NEhb9l",
+        "HhfV-JJviCcP",
+        "Y3lxredqlCYt",
+        "3RnN4peoiCZX",
+        "x71ZqKXriCWQ",
+        "7hBIi_osiCS2",
+        "JlHwYmJAmNHm",
+        "35m5QtbWiB9F",
+        "PoPl-ycgm1ru",
+        "H0kj-8xxnORC",
+        "nA9Y7ga8ng1Z",
+        "PBTbrJXOngz2",
+        "u3PMJOP6ngxN",
+        "dauF4eBmngu3",
+        "bKJF3rekwFvQ",
+        "MSa1f5Uengrz",
+        "GF8Ens_Soomf",
+        "0wOQAZs5pc--",
+        "K5QZ13OEpz2H",
+        "lQ7QKXXCp7Bj",
+        "448CDAPjqfQr",
+        "KSlN3yHqYklG",
+        "t6dVpIINYklI",
+        "ijmpgYnKYklI",
+        "-JiQyfWJYklI",
+        "EM7whBJCYoAo",
+        "fge-S5ZAYoAp",
+        "85gYPyotYoAp",
+        "RoGjAbkUYoAp",
+        "4Of9eVA-YrdM",
+        "iky9q4vBYrdO",
+        "F6T5p64dYrdO",
+        "y-Ehk30pYrdP",
+        "bamQiAODYuh1",
+        "QHF8YVU7Yuh3",
+        "GwzvFGzlYuh3",
+        "qYpmQ266Yuh3",
+        "OH-pJp9IphqM",
+        "bbFf2-_FphqN",
+        "_ouA3fa0phqN",
+        "Seke61FWphqN",
+        "PIIx-8_IphqN",
+        "t27r6nlMphqO",
+        "r2jJGEOYphqO",
+        "b0JNsNcRphqO",
+        "BZR9WyysphqO",
+        "jj7wYXLtphqO",
+        "eZrbJ2SmphqO",
+        "rFu4xreNphqO",
+        "YJ55k-q6phqO",
+        "gCFgpxoyphqP",
+        "OVtJsKN_phqQ",
+        "lssrdh5qphqQ",
+        "U2RJ9gkRphqQ",
+        "1M8mcRywphqQ",
+        "tgIPom80phqQ",
+        "JMzcOPDDphqR",
+        "x-EpHcCOp1ci",
+        "X_VqEhTip1ck",
+        "8zGJKyg5p1ck",
+        "PVzmfK_Ep1ck",
+        "n3dbpmDWp1ck",
+        "ylSl6qgtp1ck",
+        "ZWILFDl5p1ck",
+        "M7G43BXep1ck",
+        "Ag9LCva-p1cl",
+        "E6MkPsBcp1cl",
+        "2cELzS2fp1cl",
+        "3MPXvC8up1cl",
+        "NC_X3p0fY2L0",
+        "UV0SzAkaZNRQ",
+        "YPEH6qLeZNRQ",
+        "q29F0dvdveiT",
+        "EXh0U9oCveiU",
+        "22aHeOlLveiV",
+        "JcMwzZxoAimU",
+        "8G2x9gOozGDZ",
+        "gCX9965dhzqZ",
+        "gIfDvo9L0UH2"
+      ],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/lavyay2/exiting-projects-collection/blob/main/UBER%20SUPPLY%20DEMAND%20GAP.ipynb%20intern%20project\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "I1apcow5dxii"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Project Name**    -**UBER SUPPLY DEMAND GAP**\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "vncDsAP0Gaoa"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Project Summary -**"
+      ],
+      "metadata": {
+        "id": "FJNUwmbgGyua"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Write the summary here within 500-600 words.\n",
+        "\n",
+        "This project analyzes the supply and demand gap of Uber rides to and from the airport. The dataset contains information about Uber requests, including pickup and drop-off points, timestamps, and request status (completed, cancelled, or no cars available).\n",
+        "\n",
+        "The analysis focuses on identifying patterns in demand and supply across different times of the day and pickup locations. Key findings include:\n",
+        "\n",
+        "Peak Hours: The highest demand for Uber rides is observed during specific time slots, particularly during morning and evening rush hours.\n",
+        "Location-Based Discrepancies: There are significant differences in the supply-demand gap between airport and city locations.\n",
+        "Cancellation and No Availability: A considerable number of requests are either cancelled or have no cars available, highlighting the supply challenges.\n",
+        "The project delves into the characteristics of completed, cancelled, and no-car-available trips to understand the factors contributing to unfulfilled requests. This includes analyzing trip durations, driver activity, and the distribution of requests across different time slots and days of the week.\n",
+        "\n",
+        "Visualizations such as bar charts, line plots, and heatmaps are used to illustrate these findings and provide insights into the underlying patterns. The analysis aims to provide actionable recommendations to bridge the supply-demand gap and improve the efficiency of Uber's operations, particularly for airport transportation.\n",
+        "\n",
+        "Further analysis could involve exploring external factors such as flight schedules, traffic conditions, and special events that might influence demand and supply. Additionally, predictive modeling techniques could be employed to forecast demand and optimize driver allocation.\n",
+        "\n",
+        "Overall, this project provides a comprehensive analysis of the Uber supply-demand gap, offering valuable insights for improving service quality and operational efficiency."
+      ],
+      "metadata": {
+        "id": "F6v_1wHtG2nS"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **GitHub Link -**"
+      ],
+      "metadata": {
+        "id": "w6K7xa23Elo4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Provide your GitHub Link here."
+      ],
+      "metadata": {
+        "id": "h1o69JH3Eqqn"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Problem Statement**\n"
+      ],
+      "metadata": {
+        "id": "yQaldy8SH6Dl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Write Problem Statement Here.**\n",
+        "The primary business objective is to reduce the supply-demand gap in Uber rides, specifically for airport transportation.\n",
+        "\n",
+        "This aims to improve operational efficiency, increase the number of completed trips, and enhance customer satisfaction by minimizing unfulfilled requests and optimizing driver availability at peak times and locations.\n",
+        "\n",
+        "The primary problem is the significant supply-demand gap in Uber rides, focusing on airport transportation. This leads to many unfulfilled requests (Cancelled or No Cars Available).\n",
+        "\n",
+        "The project aims to:\n",
+        "\n",
+        "1 dentify the extent and nature of this gap.\n",
+        "\n",
+        "2 Determine key contributing factors.\n",
+        "\n",
+        "3 Pinpoint critical times and locations of imbalance.\n",
+        "\n",
+        "4 Provide data-driven insights to bridge the gap and improve operational efficiency and customer satisfaction."
+      ],
+      "metadata": {
+        "id": "DpeJGUA3kjGy"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### **Define Your Business Objective?**"
+      ],
+      "metadata": {
+        "id": "PH-0ReGfmX4f"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer   The primary business objective is to reduce the supply-demand gap in Uber rides, specifically for airport transportation.\n",
+        "\n",
+        "This aims to improve operational efficiency, increase the number of completed trips, and enhance customer satisfaction by minimizing unfulfilled requests and optimizing driver availability at peak times and locations."
+      ],
+      "metadata": {
+        "id": "PhDvGCAqmjP1"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "NoBfTtVlL8og"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **General Guidelines** : -  "
+      ],
+      "metadata": {
+        "id": "mDgbUHAGgjLW"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1.   Well-structured, formatted, and commented code is required.\n",
+        "2.   Exception Handling, Production Grade Code & Deployment Ready Code will be a plus. Those students will be awarded some additional credits.\n",
+        "     \n",
+        "     The additional credits will have advantages over other students during Star Student selection.\n",
+        "       \n",
+        "             [ Note: - Deployment Ready Code is defined as, the whole .ipynb notebook should be executable in one go\n",
+        "                       without a single error logged. ]\n",
+        "\n",
+        "3.   Each and every logic should have proper comments.\n",
+        "4. You may add as many number of charts you want. Make Sure for each and every chart the following format should be answered.\n",
+        "        \n",
+        "\n",
+        "```\n",
+        "# Chart visualization code\n",
+        "```\n",
+        "            \n",
+        "\n",
+        "*   Why did you pick the specific chart?\n",
+        "*   What is/are the insight(s) found from the chart?\n",
+        "* Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason.\n",
+        "\n",
+        "5. You have to create at least 20 logical & meaningful charts having important insights.\n",
+        "\n",
+        "\n",
+        "[ Hints : - Do the Vizualization in  a structured way while following \"UBM\" Rule.\n",
+        "\n",
+        "U - Univariate Analysis,\n",
+        "\n",
+        "B - Bivariate Analysis (Numerical - Categorical, Numerical - Numerical, Categorical - Categorical)\n",
+        "\n",
+        "M - Multivariate Analysis\n",
+        " ]\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "ZrxVaUj-hHfC"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# ***Let's Begin !***"
+      ],
+      "metadata": {
+        "id": "O_i_v8NEhb9l"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## ***1. Know Your Data***"
+      ],
+      "metadata": {
+        "id": "HhfV-JJviCcP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Import Libraries"
+      ],
+      "metadata": {
+        "id": "Y3lxredqlCYt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Import Libraries\n",
+        "import pandas as pd\n",
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "import seaborn as sns\n",
+        "import datetime as dt\n",
+        "import warnings\n",
+        "warnings.filterwarnings('ignore')"
+      ],
+      "metadata": {
+        "id": "M8Vqi-pPk-HR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Dataset Loading"
+      ],
+      "metadata": {
+        "id": "3RnN4peoiCZX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Load Dataset\n",
+        "pd.read_csv('/content/Uber Request Data.csv')"
+      ],
+      "metadata": {
+        "id": "4CkvbW_SlZ_R"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Dataset First View"
+      ],
+      "metadata": {
+        "id": "x71ZqKXriCWQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Dataset First Look\n",
+        "df = pd.read_csv('/content/Uber Request Data.csv')\n",
+        "df.head()"
+      ],
+      "metadata": {
+        "id": "LWNFOSvLl09H"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Dataset Rows & Columns count"
+      ],
+      "metadata": {
+        "id": "7hBIi_osiCS2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Dataset Rows & Columns count\n",
+        "df.shape"
+      ],
+      "metadata": {
+        "id": "Kllu7SJgmLij"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Dataset Information"
+      ],
+      "metadata": {
+        "id": "JlHwYmJAmNHm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Dataset Info\n",
+        "df.info()"
+      ],
+      "metadata": {
+        "id": "e9hRXRi6meOf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Duplicate Values"
+      ],
+      "metadata": {
+        "id": "35m5QtbWiB9F"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Dataset Duplicate Value Count\n",
+        "df.duplicated().sum()"
+      ],
+      "metadata": {
+        "id": "1sLdpKYkmox0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Missing Values/Null Values"
+      ],
+      "metadata": {
+        "id": "PoPl-ycgm1ru"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Missing Values/Null Values Count\n",
+        "df.isnull().sum()"
+      ],
+      "metadata": {
+        "id": "GgHWkxvamxVg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Visualizing the missing values\n",
+        "sns.heatmap(df.isnull(), cbar=False)"
+      ],
+      "metadata": {
+        "id": "3q5wnI3om9sJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### What did you know about your dataset?"
+      ],
+      "metadata": {
+        "id": "H0kj-8xxnORC"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer  The dataset contains 6745 rows and 6 columns.\n",
+        "The columns are: 'Request id', 'Pickup point', 'Driver id', 'Status', 'Request timestamp', and 'Drop timestamp'.\n",
+        "There are no duplicate rows in the dataset.\n",
+        "The 'Driver id' and 'Drop timestamp' columns have missing values. Specifically, 'Driver id' has 2650 missing values and 'Drop timestamp' has 3914 missing values.\n",
+        "The data types of the columns are: 'Request id' (int64), 'Pickup point' (object), 'Driver id' (float64), 'Status' (object), 'Request timestamp' (object), and 'Drop timestamp' (object).\n",
+        "The 'Request timestamp' and 'Drop timestamp' columns are currently stored as objects and will need to be converted to datetime objects for time-based analysis."
+      ],
+      "metadata": {
+        "id": "gfoNAAC-nUe_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## ***2. Understanding Your Variables***"
+      ],
+      "metadata": {
+        "id": "nA9Y7ga8ng1Z"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Dataset Columns\n",
+        "df.columns"
+      ],
+      "metadata": {
+        "id": "j7xfkqrt5Ag5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Dataset Describe\n",
+        "df.describe()"
+      ],
+      "metadata": {
+        "id": "DnOaZdaE5Q5t"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Variables Description"
+      ],
+      "metadata": {
+        "id": "PBTbrJXOngz2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer Here is a description of the variables in the dataset:\n",
+        "\n",
+        "Request id: Unique identifier for each Uber request (integer).\n",
+        "\n",
+        "Pickup point: The location where the Uber ride was requested from (categorical - object).\n",
+        "\n",
+        "Driver id: Unique identifier for the driver who accepted the request (float64). This column has missing values, indicating requests that were not accepted by a driver.\n",
+        "\n",
+        "Status: The current status of the request (categorical - object). This can be 'Trip Completed', 'Cancelled', or 'No Cars Available'.\n",
+        "\n",
+        "Request timestamp: The timestamp when the request was made (object). This will need to be converted to a datetime object for analysis.\n",
+        "\n",
+        "Drop timestamp: The timestamp when the trip was completed (object). This column has missing values for requests that were cancelled or had no cars available. This will also need to be converted to a datetime object for analysis.\n"
+      ],
+      "metadata": {
+        "id": "aJV4KIxSnxay"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Check Unique Values for each variable."
+      ],
+      "metadata": {
+        "id": "u3PMJOP6ngxN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Check Unique Values for each variable.\n",
+        "df.nunique()"
+      ],
+      "metadata": {
+        "id": "zms12Yq5n-jE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 3. ***Data Wrangling***"
+      ],
+      "metadata": {
+        "id": "dauF4eBmngu3"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Data Wrangling Code"
+      ],
+      "metadata": {
+        "id": "bKJF3rekwFvQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write your code to make your dataset analysis ready.\n",
+        "# Convert timestamp columns to datetime objects\n",
+        "df['Request timestamp'] = pd.to_datetime(df['Request timestamp'], errors='coerce')\n",
+        "df['Drop timestamp'] = pd.to_datetime(df['Drop timestamp'], errors='coerce')\n",
+        "\n",
+        "# Extract time-based features\n",
+        "df['Request hour'] = df['Request timestamp'].dt.hour\n",
+        "df['Request Day of Week'] = df['Request timestamp'].dt.day_name()\n",
+        "df['Request Month'] = df['Request timestamp'].dt.month\n",
+        "df['Request Year'] = df['Request timestamp'].dt.year\n",
+        "\n",
+        "# Calculate trip duration for completed trips\n",
+        "df['Trip Duration'] = (df['Drop timestamp'] - df['Request timestamp']).dt.total_seconds() / 60\n",
+        "\n",
+        "# Display the first few rows with new columns\n",
+        "display(df.head())"
+      ],
+      "metadata": {
+        "id": "wk-9a2fpoLcV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### What all manipulations have you done and insights you found?"
+      ],
+      "metadata": {
+        "id": "MSa1f5Uengrz"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer    I converted the timestamp columns to datetime objects and extracted time features like hour, day of the week, month, and year. I also calculated the trip duration for completed rides.\n",
+        "These steps allow us to analyze:\n",
+        "\n",
+        "**When people** request Ubers (peak hours, days, etc.).\n",
+        "\n",
+        "**How long** completed trips take.\n",
+        "\n",
+        "This information is key to understanding the supply and demand patterns.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "LbyXE7I1olp8"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## ***4. Data Vizualization, Storytelling & Experimenting with charts : Understand the relationships between variables***"
+      ],
+      "metadata": {
+        "id": "GF8Ens_Soomf"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 1"
+      ],
+      "metadata": {
+        "id": "0wOQAZs5pc--"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 1 visualization code\n",
+        "status_counts = df['Status'].value_counts()\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "sns.barplot(x=status_counts.index, y=status_counts.values, palette='viridis')\n",
+        "plt.title('Distribution of Uber Request Status')\n",
+        "plt.xlabel('Status')\n",
+        "plt.ylabel('Number of Requests')\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "7v_ESjsspbW7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "K5QZ13OEpz2H"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer\n",
+        "I chose a bar chart to visualize the distribution of Uber request statuses because it's an effective way to compare the counts of different categorical variables (Trip Completed, Cancelled, No Cars Available). Bar charts make it easy to see which status has the highest or lowest frequency."
+      ],
+      "metadata": {
+        "id": "XESiWehPqBRc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "lQ7QKXXCp7Bj"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer  I need to see the output of the chart first to tell you the exact insights. However, generally, this chart will show the number of requests for each status (Completed, Cancelled, No Cars Available). We'll be able to see which status is most frequent and understand the overall proportion of successful trips versus unfulfilled requests."
+      ],
+      "metadata": {
+        "id": "C_j1G7yiqdRP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "448CDAPjqfQr"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer  Yes, the insights from the request status distribution chart can definitely help create a positive business impact.\n",
+        "\n",
+        "By understanding the proportion of cancelled requests and requests with no cars available, Uber can identify the severity of the supply-demand gap. This knowledge can inform strategies to:\n",
+        "\n",
+        "**Increase driver availability:**\n",
+        " If \"No Cars Available\" is high, Uber can focus on recruiting more drivers, especially during peak hours or in specific locations where this is a major issue.\n",
+        "\n",
+        "**Reduce cancellations:**\n",
+        " If cancellations are high, Uber can investigate the reasons behind them (e.g., long waiting times, driver behavior, pricing) and implement solutions to reduce them.\n",
+        "\n",
+        "**Optimize resource allocation:**\n",
+        " By knowing when and where requests are unfulfilled, Uber can better allocate drivers to meet the demand.\n",
+        "\n",
+        " Identifying and addressing the reasons for unfulfilled requests directly contributes to improving customer satisfaction, increasing completed trips, and ultimately driving positive business growth.\n"
+      ],
+      "metadata": {
+        "id": "3cspy4FjqxJW"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 2"
+      ],
+      "metadata": {
+        "id": "KSlN3yHqYklG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 2 visualization code\n",
+        "status_by_pickup = df.groupby('Pickup point')['Status'].value_counts().unstack()\n",
+        "\n",
+        "status_by_pickup.plot(kind='bar', figsize=(10, 6))\n",
+        "plt.title('Uber Request Status Distribution by Pickup Point')\n",
+        "plt.xlabel('Pickup Point')\n",
+        "plt.ylabel('Number of Requests')\n",
+        "plt.xticks(rotation=0)\n",
+        "plt.legend(title='Status')\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "R4YgtaqtYklH"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "t6dVpIINYklI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Answer** I chose a grouped bar chart to visualize the Uber request status distribution by pickup point because it allows for a direct comparison of the 'Status' categories ('Trip Completed', 'Cancelled', 'No Cars Available') within each 'Pickup point' ('Airport' and 'City'). This makes it easy to see if the proportion of each status differs depending on where the ride was requested."
+      ],
+      "metadata": {
+        "id": "5aaW0BYyYklI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "ijmpgYnKYklI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer  I chose a grouped bar chart to visualize the Uber request status distribution by pickup point because it allows for a direct comparison of the 'Status' categories ('Trip Completed', 'Cancelled', 'No Cars Available') within each 'Pickup point' ('Airport' and 'City'). This makes it easy to see if the proportion of each status differs depending on where the ride was requested."
+      ],
+      "metadata": {
+        "id": "PSx9atu2YklI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "-JiQyfWJYklI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer   Yes, the insights from the grouped bar chart showing request status by pickup point are very valuable for creating a positive business impact.\n",
+        "\n",
+        "By understanding where the supply-demand gap is most prominent (Airport or City) and the specific nature of the issues (cancellations or no cars available) in each location, Uber can tailor its strategies effectively. For example:\n",
+        "\n",
+        "Targeted Driver Recruitment: If the chart shows a high number of \"No Cars Available\" requests at the Airport during certain times, Uber can focus on incentivizing drivers to be available at the airport during those periods.\n",
+        "Location-Specific Promotions: If cancellations are high in the City, Uber might investigate if surge pricing or estimated arrival times are contributing factors and adjust accordingly.\n",
+        "Improved Resource Allocation: Knowing the demand patterns at each location allows for better distribution of available drivers, reducing wait times and increasing completed trips.\n",
+        "Identifying areas with a high proportion of unfulfilled requests (cancellations and no cars available) highlights areas of negative growth, as these represent lost revenue opportunities and potentially dissatisfied customers. By addressing these location-specific issues, Uber can improve its service efficiency, increase completed trips, and ultimately drive positive business growth."
+      ],
+      "metadata": {
+        "id": "BcBbebzrYklV"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 3"
+      ],
+      "metadata": {
+        "id": "EM7whBJCYoAo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 3 visualization code\n",
+        "status_by_hour = df.groupby('Request hour')['Status'].value_counts().unstack().fillna(0)\n",
+        "\n",
+        "status_by_hour.plot(kind='bar', stacked=True, figsize=(12, 7))\n",
+        "plt.title('Uber Request Status Distribution by Hour of the Day')\n",
+        "plt.xlabel('Hour of Day')\n",
+        "plt.ylabel('Number of Requests')\n",
+        "plt.xticks(rotation=0)\n",
+        "plt.legend(title='Status')\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "t6GMdE67YoAp"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "fge-S5ZAYoAp"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer I chose a stacked bar chart to visualize the Uber request status distribution by hour of the day because it's a great way to see the total number of requests at each hour and, more importantly, how that total is divided among the different statuses ('Trip Completed', 'Cancelled', and 'No Cars Available'). This helps us quickly identify the hours where unfulfilled requests (cancelled or no cars available) are most prevalent and understand their proportion relative to completed trips during those times."
+      ],
+      "metadata": {
+        "id": "5dBItgRVYoAp"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "85gYPyotYoAp"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer Looking at the chart, here are some key insights:\n",
+        "\n",
+        "Peak Demand Hours:    There are clear peak hours for Uber requests. We can observe a significant number of requests during certain times of the day.\n",
+        "\n",
+        "Morning Rush (Around 5-9 AM):    During the morning hours, there is a high number of cancelled requests and completed trips. This suggests high demand from the city, but also potential issues with driver availability leading to cancellations.\n",
+        "\n",
+        "Evening Rush (Around 5-10 PM):  The evening hours show a substantial number of \"No Cars Available\" requests, particularly for Airport pickups. This indicates a significant supply shortage during this time, likely due to high demand from the airport to the city.\n",
+        "Differences in Status Distribution Throughout the Day: The proportion of 'Trip Completed', 'Cancelled', and 'No Cars Available' statuses varies significantly throughout the day, highlighting the dynamic nature of the supply-demand gap.\n",
+        "\n",
+        " The stacked bars clearly show that the \"No Cars Available\" status forms a large portion of the requests in the evening, indicating a lack of available drivers to meet the demand.\n"
+      ],
+      "metadata": {
+        "id": "4jstXR6OYoAp"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "RoGjAbkUYoAp"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer Yes, the insights gained from the chart showing request status distribution by hour are highly valuable for creating a positive business impact.\n",
+        "\n",
+        "By identifying the specific hours of the day when cancellations and \"No Cars Available\" requests are most prevalent, Uber can implement targeted strategies to address these issues during those critical periods. This could include:\n",
+        "\n",
+        "Incentivizing drivers: Offering incentives to drivers to be available during peak demand hours, especially in locations with high \"No Cars Available\" rates.\n",
+        "Dynamic pricing adjustments: Implementing dynamic pricing strategies during peak hours to balance supply and demand (although this needs careful consideration to avoid excessive cancellations due to high prices).\n",
+        "Improved demand forecasting: Using the hourly data to refine demand forecasting models and better anticipate the number of drivers needed at different times.\n",
+        "Targeted communication: Communicating with drivers about the peak demand hours and locations to encourage them to be online during those times.\n",
+        "The insights that lead to negative growth are the high numbers of \"Cancelled\" and \"No Cars Available\" requests during specific hours. These represent lost revenue and potentially dissatisfied customers who might turn to alternative transportation options in the future. By focusing on resolving the issues during these identified peak problem hours, Uber can significantly improve its service reliability, increase completed trips, and ultimately drive positive business growth"
+      ],
+      "metadata": {
+        "id": "zfJ8IqMcYoAp"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 4"
+      ],
+      "metadata": {
+        "id": "4Of9eVA-YrdM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 4 visualization code\n",
+        "# Create time slots\n",
+        "def get_time_slot(hour):\n",
+        "    if 4 <= hour < 10:\n",
+        "        return 'Morning'\n",
+        "    elif 10 <= hour < 16:\n",
+        "        return 'Daytime'\n",
+        "    elif 16 <= hour < 22:\n",
+        "        return 'Evening'\n",
+        "    else:\n",
+        "        return 'Night'\n",
+        "\n",
+        "df['Time Slot'] = df['Request hour'].apply(get_time_slot)\n",
+        "\n",
+        "# Group by pickup point and time slot, then count status\n",
+        "status_by_pickup_timeslot = df.groupby(['Pickup point', 'Time Slot'])['Status'].value_counts().unstack().fillna(0)\n",
+        "\n",
+        "status_by_pickup_timeslot.plot(kind='bar', stacked=True, figsize=(14, 7))\n",
+        "plt.title('Uber Request Status Distribution by Pickup Point and Time Slot')\n",
+        "plt.xlabel('Pickup Point and Time Slot')\n",
+        "plt.ylabel('Number of Requests')\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.legend(title='Status')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "irlUoxc8YrdO"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "iky9q4vBYrdO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer  I used a stacked bar chart to show how request statuses are distributed by both pickup point and time of day, making it easy to compare the breakdown across different locations and times."
+      ],
+      "metadata": {
+        "id": "aJRCwT6DYrdO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "F6T5p64dYrdO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer Looking at the chart showing Uber request status distribution by pickup point and time slot, here are some insights:\n",
+        "\n",
+        "Morning Rush (City to Airport): There's a significant number of cancelled requests from the City during the Morning time slot (4 AM to 10 AM).\n",
+        "\n",
+        "This suggests that many people requesting rides from the City to the Airport in the morning are unable to get one, likely due to a shortage of drivers in the City willing to go to the Airport during that busy time.\n",
+        "\n",
+        "Evening Rush (Airport to City):\n",
+        "The Evening time slot (4 PM to 10 PM) shows a large number of \"No Cars Available\" requests from the Airport. This indicates a severe shortage of drivers at the Airport during this period, likely because many drivers are in the City and there's high demand from the Airport to the City.\n",
+        "\n",
+        "Daytime and Nighttime: The Daytime and Nighttime slots generally show a higher proportion of \"Trip Completed\" requests compared to the rush hours, although there are still some unfulfilled requests. The \"No Cars Available\" issue at the Airport is particularly prominent during the Night time slot as well.\n",
+        "\n",
+        "Comparison between City and Airport:\n",
+        "\n",
+        "The chart clearly highlights that the nature of the supply-demand gap differs between the City and the Airport and varies throughout the day. The City seems to have more issues with cancellations in the morning, while the Airport has a significant problem with \"No Cars Available\" in the evening and night.\n",
+        "\n",
+        "These insights pinpoint the specific times and locations where the supply-demand imbalance is most critical and the nature of the problem (cancellation or no car availability)."
+      ],
+      "metadata": {
+        "id": "Xx8WAJvtYrdO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "y-Ehk30pYrdP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer es, understanding the supply-demand gap by location and time helps Uber target resources effectively (positive impact). High unfulfilled requests in specific time slots and locations show negative growth due to lost business and potential customer dissatisfaction."
+      ],
+      "metadata": {
+        "id": "jLNxxz7MYrdP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 5"
+      ],
+      "metadata": {
+        "id": "bamQiAODYuh1"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Chart 5: analyze trip duration distribution\n",
+        "Subtask:\n",
+        "Create a histogram or box plot to visualize the distribution of trip durations for completed trips. Answer the standard questions for this chart.\n",
+        "\n",
+        "Reasoning: Filter the DataFrame to get completed trips and then create a histogram to visualize the distribution of trip durations."
+      ],
+      "metadata": {
+        "id": "JcFPB3nMNyTx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 5 visualization code\n",
+        "\n",
+        "completed_trips_df = df[(df['Status'] == 'Trip Completed') & (df['Trip Duration'].notnull())]\n",
+        "\n",
+        "plt.figure(figsize=(10, 6))\n",
+        "sns.histplot(data=completed_trips_df, x='Trip Duration', bins=50, kde=True)\n",
+        "plt.title('Distribution of Trip Durations for Completed Trips')\n",
+        "plt.xlabel('Trip Duration (minutes)')\n",
+        "plt.ylabel('Frequency')\n",
+        "plt.show()\n"
+      ],
+      "metadata": {
+        "id": "TIJwrbroYuh3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "QHF8YVU7Yuh3"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer  I chose a histogram to visualize the distribution of trip durations for completed trips because it effectively shows the frequency of different trip lengths. It helps us understand the typical duration of completed rides and identify if there are any unusually long or short trips. The KDE (Kernel Density Estimate) line is added to show the estimated probability density function, giving a smoothed representation of the distribution."
+      ],
+      "metadata": {
+        "id": "dcxuIMRPYuh3"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "GwzvFGzlYuh3"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer Looking at the histogram of trip durations for completed trips, here are some insights:\n",
+        "\n",
+        "Typical Trip Duration: The majority of completed trips fall within a certain range, likely indicating common travel times for successful Uber rides in this dataset. We can observe a peak in the histogram which represents the most frequent trip duration.\n",
+        "\n",
+        "Distribution Shape: The distribution appears to be right-skewed, meaning there are some longer trips that extend the tail of the distribution to the right.\n",
+        "\n",
+        "Outliers: There might be some outliers representing unusually long trips, which could be due to various factors like traffic, distance, or other delays.\n",
+        "Understanding the typical trip duration and the spread of trip lengths can help Uber estimate arrival times more accurately and optimize routing.\n",
+        "\n",
+        "Identifying unusually long trips might warrant further investigation into potential issues.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "uyqkiB8YYuh3"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "qYpmQ266Yuh3"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer The insights from the trip duration histogram can definitely help create a positive business impact.\n",
+        "\n",
+        "Understanding the typical trip duration allows Uber to:\n",
+        "\n",
+        "Improve ETA Accuracy: More accurate estimated arrival times can improve customer satisfaction and reduce cancellations due to long waits.\n",
+        "\n",
+        "Optimize Driver Routing and Allocation: By knowing typical trip lengths from different locations, Uber can better estimate driver availability and optimize dispatching to reduce downtime between trips.\n",
+        "\n",
+        "Identify Operational Issues: Unusually long trip durations could indicate traffic problems, inefficient routes, or other operational issues that need to be addressed to improve efficiency and driver utilization.\n",
+        "\n",
+        "Insights that could indicate negative growth are the presence of a significant number of unusually long trips (outliers).\n",
+        "\n",
+        "While some long trips are expected, a high frequency of excessively long trips could point to inefficiencies in the system, potentially leading to lower driver earnings per hour and increased customer dissatisfaction due to extended travel times.\n",
+        "\n",
+        "Addressing the root causes of these long trips is crucial for improving service quality and preventing negative growth.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "_WtzZ_hCYuh4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 6"
+      ],
+      "metadata": {
+        "id": "OH-pJp9IphqM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 6 visualization code\n",
+        "# Scatter plot of Request Hour vs. Trip Duration for completed trips\n",
+        "plt.figure(figsize=(10, 6))\n",
+        "sns.scatterplot(data=completed_trips_df, x='Request hour', y='Trip Duration', alpha=0.5)\n",
+        "plt.title('Scatter Plot of Request Hour vs. Trip Duration (Completed Trips)')\n",
+        "plt.xlabel('Request Hour')\n",
+        "plt.ylabel('Trip Duration (minutes)')\n",
+        "plt.grid(True)\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "kuRf4wtuphqN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "bbFf2-_FphqN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer\n",
+        " I chose a scatter plot to visualize the relationship between 'Request hour' and 'Trip Duration' for completed trips because scatter plots are effective in showing the potential correlation or patterns between two numerical variables. By plotting each completed trip as a point with its request hour on the x-axis and its duration on the y-axis, we can observe if there's any trend or clustering of trip durations at different hours of the day. This helps to see if trips are generally longer or shorter during specific times."
+      ],
+      "metadata": {
+        "id": "loh7H2nzphqN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "_ouA3fa0phqN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "d7c6db1c"
+      },
+      "source": [
+        "**Answer Here**\n",
+        "\n",
+        "Looking at the scatter plot of 'Request hour' vs. 'Trip Duration' for completed trips, here are some potential insights:\n",
+        "\n",
+        "*   **No strong linear correlation:** There doesn't appear to be a clear linear relationship between the hour of the day and the trip duration. The points are quite scattered.\n",
+        "*   **Variability in trip duration:** For almost every hour of the day, there is a wide range of trip durations, indicating that trip length is not solely determined by the time of the request.\n",
+        "*   **Potential clusters or patterns:** While there's no strong correlation, there might be some hours where a higher concentration of longer or shorter trips occur. For example, we might observe more longer trips during peak traffic hours, although this isn't immediately obvious from a simple scatter plot without further analysis or aggregation.\n",
+        "\n",
+        "Further analysis, perhaps by looking at average trip duration per hour or visualizing density, might reveal more subtle patterns."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "Seke61FWphqN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dc837d7b"
+      },
+      "source": [
+        "Answer\n",
+        "\n",
+        "The insights from the scatter plot of 'Request hour' vs. 'Trip Duration' for completed trips have a moderate potential for positive business impact, primarily by highlighting the variability in trip durations at different hours.\n",
+        "\n",
+        "**Positive Business Impact:**\n",
+        "\n",
+        "*   **Improved ETA Accuracy:** While there's no strong linear correlation, understanding that trip durations vary significantly within each hour can help Uber refine their estimated arrival time (ETA) calculations. Instead of relying solely on distance and time of day, they might need to incorporate other factors or use more sophisticated models that account for this variability. More accurate ETAs lead to improved customer satisfaction.\n",
+        "*   **Operational Planning:** Recognizing the range of trip durations at different times can inform operational planning, such as driver scheduling and dispatching. For example, if certain hours consistently show a wider spread of trip durations, it might indicate unpredictable traffic conditions that require more buffer time in scheduling.\n",
+        "\n",
+        "**Insights that could lead to negative growth:**\n",
+        "\n",
+        "*   **Unpredictability:** The lack of a strong pattern and the high variability in trip durations at any given hour suggest a degree of unpredictability in trip completion times. This unpredictability can lead to:\n",
+        "    *   **Driver Frustration:** Drivers might find it difficult to estimate their earnings and schedule their work effectively if trip durations are highly variable.\n",
+        "    *   **Customer Dissatisfaction:** While ETAs can be improved, significant deviations from the estimate due to unpredictable trip durations can still lead to frustrated customers.\n",
+        "    *   **Inefficient Resource Utilization:** Unpredictable trip durations can make it harder to efficiently allocate drivers, potentially leading to longer wait times for riders or idle time for drivers.\n",
+        "\n",
+        "While the scatter plot doesn't show direct negative growth metrics like cancellations, the underlying unpredictability it reveals can indirectly contribute to negative growth by impacting driver and customer experience and operational efficiency. Addressing the factors contributing to this variability (e.g., traffic congestion, inefficient routing) is crucial for mitigating potential negative impacts."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 7"
+      ],
+      "metadata": {
+        "id": "PIIx-8_IphqN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 7 visualization code\n",
+        "\n",
+        "plt.figure(figsize=(5, 5))\n",
+        "plt.pie(status_counts, labels=status_counts.index, autopct='%1.1f%%', startangle=140)\n",
+        "plt.title('Distribution of Uber Request Status')\n",
+        "plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "lqAIGUfyphqO"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "t27r6nlMphqO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "c228175d"
+      },
+      "source": [
+        "**Answer**\n",
+        "I chose a pie chart to visualize the distribution of Uber request statuses because it is an effective way to show the proportion of each category ('Trip Completed', 'Cancelled', 'No Cars Available') relative to the whole number of requests. It quickly provides a clear visual representation of how the total requests are divided among the different statuses, making it easy to see which status is most frequent and the relative size of the unfulfilled requests."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "r2jJGEOYphqO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "e6108538"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "Looking at the pie chart showing the distribution of Uber request statuses, here are the key insights:\n",
+        "\n",
+        "*   **Significant number of unfulfilled requests:** The chart clearly shows that a large portion of Uber requests are not completed. Combining the 'Cancelled' and 'No Cars Available' segments reveals the overall percentage of requests that did not result in a completed trip.\n",
+        "*   **Proportion of each status:** The chart directly provides the percentage of requests for each status: 'Trip Completed', 'Cancelled', and 'No Cars Available'. This allows for a quick comparison of the frequency of each outcome.\n",
+        "*   **Identification of the biggest issue:** By looking at the largest segments among the unfulfilled requests ('Cancelled' and 'No Cars Available'), we can identify which specific issue (cancellations or lack of cars) contributes more to the supply-demand gap.\n",
+        "\n",
+        "These insights provide a high-level overview of the success rate of Uber requests and highlight the magnitude of the problem of unfulfilled rides."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "b0JNsNcRphqO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0e767a91"
+      },
+      "source": [
+        "**Answer**\n",
+        "\n",
+        "Yes, the insights from the pie chart on Uber request status distribution are crucial for creating a positive business impact.\n",
+        "\n",
+        "**Positive Business Impact:**\n",
+        "\n",
+        "*   **Quantifying the Problem:** The pie chart clearly quantifies the proportion of unfulfilled requests. This provides a clear understanding of the magnitude of the supply-demand gap, which is the primary business problem. Knowing the percentage of requests that are cancelled or have no cars available allows Uber to set specific, measurable goals for improvement.\n",
+        "*   **Prioritization of Issues:** By showing the relative size of the 'Cancelled' and 'No Cars Available' segments, the chart helps Uber prioritize which issue to address first. If 'No Cars Available' is a much larger slice, the focus should be on increasing driver supply or optimizing driver allocation. If 'Cancelled' is larger, the focus might shift to understanding and mitigating reasons for cancellations (e.g., long wait times, pricing).\n",
+        "\n",
+        "**Insights that could lead to negative growth:**\n",
+        "\n",
+        "*   **High proportion of unfulfilled requests:** The significant percentage of requests that are either 'Cancelled' or result in 'No Cars Available' directly represents lost revenue and potential negative growth. Each unfulfilled request is a missed business opportunity.\n",
+        "*   **Customer Dissatisfaction:** A high rate of unfulfilled requests leads to frustrated customers who may switch to competitor services, resulting in a loss of market share and negative business growth.\n",
+        "*   **Driver Inefficiency:** If drivers are frequently unable to accept requests due to distance or other factors leading to 'No Cars Available', it can indicate inefficiencies in the dispatching system or a mismatch between driver location and rider demand, impacting driver earnings and potentially leading to driver churn.\n",
+        "\n",
+        "Therefore, while the pie chart itself is a high-level summary, the insights it provides about the magnitude and nature of the unfulfilled requests are fundamental to identifying areas of negative growth and formulating strategies for positive business impact."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 8"
+      ],
+      "metadata": {
+        "id": "BZR9WyysphqO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 8 visualization code\n",
+        "status_by_day = df.groupby('Request Day of Week')['Status'].value_counts().unstack().fillna(0)\n",
+        "\n",
+        "# Define the order of days of the week for proper plotting\n",
+        "day_order = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']\n",
+        "status_by_day = status_by_day.reindex(day_order).fillna(0)\n",
+        "\n",
+        "\n",
+        "status_by_day.plot(kind='bar', stacked=True, figsize=(10, 6))\n",
+        "plt.title('Uber Request Status Distribution by Day of the Week')\n",
+        "plt.xlabel('Day of the Week')\n",
+        "plt.ylabel('Number of Requests')\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.legend(title='Status')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "TdPTWpAVphqO"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "jj7wYXLtphqO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "f99cf7de"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "I chose a stacked bar chart to visualize the Uber request status distribution by day of the week because it allows us to see the total number of requests for each day and how those requests are broken down by status ('Trip Completed', 'Cancelled', 'No Cars Available'). This makes it easy to compare the proportion of unfulfilled requests across different days and identify if certain days have a higher rate of cancellations or no cars available."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "eZrbJ2SmphqO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "2887da39"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "Looking at the stacked bar chart showing Uber request status distribution by day of the week, here are some key insights:\n",
+        "\n",
+        "*   **Data Limitation:** The chart primarily shows data for only two days: Monday and Wednesday. There are no requests recorded for Tuesday, Thursday, Friday, Saturday, or Sunday in this dataset. This is a significant limitation in understanding the weekly patterns.\n",
+        "*   **Comparison between Monday and Wednesday:** Based on the available data for Monday and Wednesday:\n",
+        "    *   Both days show a substantial number of unfulfilled requests (Cancelled and No Cars Available).\n",
+        "    *   The total number of requests appears to be slightly higher on Monday than on Wednesday.\n",
+        "    *   The proportion of 'No Cars Available' requests seems to be higher than 'Cancelled' requests on both days.\n",
+        "*   **Need for Complete Data:** Due to the missing data for most days of the week, it is not possible to draw comprehensive conclusions about how the supply-demand gap varies throughout the entire week.\n",
+        "\n",
+        "The primary insight from this chart is the incompleteness of the data regarding the days of the week, which limits the ability to analyze weekly trends in Uber request statuses."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "rFu4xreNphqO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "a4324965"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "The insights gained from this chart regarding the distribution of Uber request statuses by day of the week are **limited in their direct business impact** due to the incomplete data (only Monday and Wednesday are represented).\n",
+        "\n",
+        "**Limited Positive Business Impact:**\n",
+        "\n",
+        "*   Based *only* on the limited data for Monday and Wednesday, one can infer that both days experience a significant number of unfulfilled requests. This reinforces the overall finding about the supply-demand gap, but it doesn't provide enough information to identify specific daily trends or plan strategies for other days of the week.\n",
+        "\n",
+        "**Insights that could lead to negative growth:**\n",
+        "\n",
+        "*   The presence of unfulfilled requests (Cancelled and No Cars Available) on both Monday and Wednesday, as shown in the chart, represents lost revenue and potential customer dissatisfaction for those specific days. However, without data for the full week, we cannot determine if certain days have significantly worse performance than others.\n",
+        "\n",
+        "**Overall:** The primary insight from this chart is the **need for more complete data** to fully understand the weekly patterns of the supply-demand gap and make informed decisions for positive business impact. Analyzing a complete week's data would be crucial to identify specific days with critical imbalances and tailor operational strategies accordingly."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 9"
+      ],
+      "metadata": {
+        "id": "YJ55k-q6phqO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 9 visualization code\n",
+        "# Filter for unfulfilled requests (Cancelled or No Cars Available)\n",
+        "unfulfilled_df = df[df['Status'].isin(['Cancelled', 'No Cars Available'])]\n",
+        "\n",
+        "# Group by pickup point and time slot, then count status\n",
+        "unfulfilled_by_pickup_timeslot = unfulfilled_df.groupby(['Pickup point', 'Time Slot'])['Status'].value_counts().unstack().fillna(0)\n",
+        "\n",
+        "unfulfilled_by_pickup_timeslot.plot(kind='bar', figsize=(12, 7))\n",
+        "plt.title('Unfulfilled Requests (Cancelled and No Cars Available) by Pickup Point and Time Slot')\n",
+        "plt.xlabel('Pickup Point and Time Slot')\n",
+        "plt.ylabel('Number of Requests')\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.legend(title='Status')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "B2aS4O1ophqO"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "gCFgpxoyphqP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "050cdfe3"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "I chose a grouped bar chart to visualize the unfulfilled requests by pickup point and time slot because it allows for a clear comparison of the counts of 'Cancelled' and 'No Cars Available' requests within each combination of pickup point and time slot. This helps to easily identify which specific pickup location and time of day has the highest number of each type of unfulfilled request, providing targeted insights into the supply-demand gap."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "OVtJsKN_phqQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "c4a1018b"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "Looking at the grouped bar chart of unfulfilled requests by pickup point and time slot, here are the key insights:\n",
+        "\n",
+        "*   **Airport - Evening and Night are critical:** The most significant number of \"No Cars Available\" requests occur at the **Airport** during the **Evening** and **Night** time slots. This highlights a severe supply shortage at the airport during these peak hours for trips from the airport.\n",
+        "*   **City - Morning is a major issue:** The highest number of \"Cancelled\" requests occur in the **City** during the **Morning** time slot. This suggests that drivers in the city might be cancelling requests, potentially due to factors like not wanting to go to the airport during rush hour or other reasons.\n",
+        "*   **Different problems at different locations and times:** The chart clearly shows that the nature of the unfulfilled requests differs significantly between the Airport and the City and across different time slots. The Airport primarily suffers from a lack of available cars in the evening and night, while the City has a major issue with cancellations in the morning.\n",
+        "*   **Daytime has fewer unfulfilled requests:** Compared to the rush hours (Morning and Evening/Night), the Daytime slot generally has fewer unfulfilled requests at both pickup points.\n",
+        "\n",
+        "These insights pinpoint the specific times and locations where the supply-demand gap is most pronounced and the specific type of unfulfilled request that is most common in those areas."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "lssrdh5qphqQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "c8e62fae"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "Yes, the insights from the grouped bar chart of unfulfilled requests by pickup point and time slot are highly valuable for creating a positive business impact.\n",
+        "\n",
+        "**Positive Business Impact:**\n",
+        "\n",
+        "*   **Targeted Solutions:** The chart precisely identifies the most critical time slots and pickup points for unfulfilled requests (e.g., \"No Cars Available\" at the Airport in the Evening/Night, \"Cancelled\" in the City in the Morning). This allows Uber to develop targeted strategies instead of general ones. For example, they can focus on incentivizing drivers to be at the airport during evening/night or investigate reasons for cancellations in the city during the morning.\n",
+        "*   **Efficient Resource Allocation:** Knowing the specific hotspots for the supply-demand gap enables more efficient allocation of drivers. Uber can proactively position drivers in areas and at times where demand is high and supply is low.\n",
+        "*   **Improved Customer Experience:** By addressing the issues at the identified critical points, Uber can significantly reduce wait times and cancellations, leading to a better experience for customers and increased satisfaction.\n",
+        "\n",
+        "**Insights that lead to negative growth:**\n",
+        "\n",
+        "*   **High Unfulfilled Requests in Specific Hotspots:** The chart clearly highlights the areas with the highest number of unfulfilled requests. These represent significant instances of lost business and revenue. Each cancelled request or instance of \"No Cars Available\" is a missed transaction.\n",
+        "*   **Customer Churn:** Repeatedly being unable to get a ride during peak times or from specific locations will likely lead to customers switching to alternative transportation methods, resulting in a loss of market share and long-term negative growth.\n",
+        "*   **Driver Dissatisfaction (indirectly):** While not directly shown in this chart, a high rate of \"No Cars Available\" at the Airport might indicate that drivers are not finding it profitable or convenient to be there during those times, potentially leading to driver dissatisfaction or reluctance to take those trips. Similarly, high cancellations in the city could frustrate drivers who have accepted the request.\n",
+        "\n",
+        "By directly pinpointing the most problematic areas, the insights from this chart are essential for developing strategies to mitigate negative growth and drive positive business outcomes."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 10"
+      ],
+      "metadata": {
+        "id": "U2RJ9gkRphqQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 10 visualization code\n",
+        "# Group by request timestamp and status, then count requests\n",
+        "requests_over_time = df.groupby([df['Request timestamp'].dt.date, 'Status']).size().unstack().fillna(0)\n",
+        "\n",
+        "# Plot the trend over time\n",
+        "plt.figure(figsize=(14, 7))\n",
+        "requests_over_time.plot(kind='line', marker='o', ax=plt.gca())\n",
+        "plt.title('Uber Request Trend by Status Over Time')\n",
+        "plt.xlabel('Date')\n",
+        "plt.ylabel('Number of Requests')\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.legend(title='Status')\n",
+        "plt.grid(True)\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "GM7a4YP4phqQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "1M8mcRywphqQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0e9bf73f"
+      },
+      "source": [
+        "**Answer**\n",
+        "\n",
+        "I chose a line plot to visualize the Uber request trend by status over time because line plots are ideal for showing how data changes continuously over a period. In this case, it allows us to see the fluctuations in the number of 'Trip Completed', 'Cancelled', and 'No Cars Available' requests across the recorded dates. This helps in identifying any daily patterns, peaks in demand, or periods with a high incidence of unfulfilled requests."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "tgIPom80phqQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fdabe888"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "Looking at the line plot showing the Uber request trend by status over time, here are the key insights:\n",
+        "\n",
+        "*   **Limited Data Range:** The chart only shows data for two distinct dates (November 7th, 2016 and December 7th, 2016). This severely limits the ability to identify long-term trends or seasonal patterns.\n",
+        "*   **Daily Fluctuation:** For the two dates available, there are clear fluctuations in the number of requests throughout the day, with peaks and dips for each status.\n",
+        "*   **Consistent Pattern of Unfulfilled Requests:** On both recorded dates, there is a significant number of 'No Cars Available' requests, consistently higher than 'Cancelled' requests and a substantial portion of the total requests. This reinforces the earlier finding about the supply-demand gap.\n",
+        "*   **Comparison Between the Two Dates:** While the overall pattern of statuses seems somewhat similar on both days, there might be slight variations in the total number of requests or the proportion of each status between November 7th and December 7th.\n",
+        "\n",
+        "Due to the limited data points (only two days), it's challenging to draw strong conclusions about trends over a longer period. However, the chart clearly illustrates the presence of unfulfilled requests on the days recorded and hints at daily patterns in demand and supply."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "JMzcOPDDphqR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8256f054"
+      },
+      "source": [
+        "**Answer**\n",
+        "\n",
+        "The insights gained from the line plot showing Uber request trends over time have **limited direct positive business impact** due to the very restricted data range (only two days). It is difficult to make strategic decisions based on such a short timeframe.\n",
+        "\n",
+        "**Limited Positive Business Impact:**\n",
+        "\n",
+        "*   The chart confirms the existence of unfulfilled requests ('Cancelled' and 'No Cars Available') on the days observed, reinforcing the need to address the supply-demand gap.\n",
+        "*   It shows that there are daily fluctuations in demand and unfulfilled requests, suggesting that time of day is a factor.\n",
+        "\n",
+        "**Insights that lead to negative growth:**\n",
+        "\n",
+        "*   The persistent presence of a substantial number of 'No Cars Available' and 'Cancelled' requests on both recorded days represents **consistent lost revenue and potential customer dissatisfaction**. Even within this limited timeframe, the chart highlights that a significant portion of demand is not being met.\n",
+        "*   The limited data itself is a barrier to identifying seasonal or weekly trends, which are crucial for effective business planning and preventing negative growth over longer periods. Without more data, it's hard to know if the observed days are representative or if there are other times with even more severe imbalances.\n",
+        "\n",
+        "In conclusion, while the chart confirms the problem, its limited scope restricts the ability to draw comprehensive conclusions for significant positive business impact or to fully understand the patterns leading to negative growth over time. More data is needed for a thorough analysis."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 11"
+      ],
+      "metadata": {
+        "id": "x-EpHcCOp1ci"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 11 visualization code\n",
+        "# Analyze status distribution during morning peak hours (City) and evening/night peak hours (Airport)\n",
+        "\n",
+        "# Filter for requests during morning peak hours (4 AM to 10 AM) from the City\n",
+        "morning_peak_city_df = df[(df['Time Slot'] == 'Morning') & (df['Pickup point'] == 'City')]\n",
+        "\n",
+        "# Filter for requests during evening/night peak hours (4 PM to 4 AM) from the Airport\n",
+        "evening_night_peak_airport_df = df[((df['Time Slot'] == 'Evening') | (df['Time Slot'] == 'Night')) & (df['Pickup point'] == 'Airport')]\n",
+        "\n",
+        "# Get status counts for each filtered dataframe\n",
+        "morning_peak_city_status_counts = morning_peak_city_df['Status'].value_counts()\n",
+        "evening_night_peak_airport_status_counts = evening_night_peak_airport_df['Status'].value_counts()\n",
+        "\n",
+        "# Create pie charts\n",
+        "plt.figure(figsize=(12, 6))\n",
+        "\n",
+        "plt.subplot(1, 2, 1)\n",
+        "plt.pie(morning_peak_city_status_counts, labels=morning_peak_city_status_counts.index, autopct='%1.1f%%', startangle=140)\n",
+        "plt.title('Status Distribution: City - Morning Peak')\n",
+        "plt.axis('equal')\n",
+        "\n",
+        "plt.subplot(1, 2, 2)\n",
+        "plt.pie(evening_night_peak_airport_status_counts, labels=evening_night_peak_airport_status_counts.index, autopct='%1.1f%%', startangle=140)\n",
+        "plt.title('Status Distribution: Airport - Evening/Night Peak')\n",
+        "plt.axis('equal')\n",
+        "\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "mAQTIvtqp1cj"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "X_VqEhTip1ck"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "a006e582"
+      },
+      "source": [
+        "Answer\n",
+        "\n",
+        "I chose to use two pie charts for Chart 11 to provide a focused and clear visualization of the request status distribution during the identified critical peak times for each major pickup point: the morning peak in the City and the evening/night peak at the Airport. Pie charts are excellent for showing the proportion of different categories within a whole. By creating separate pie charts for these specific scenarios, we can easily compare the percentage of 'Trip Completed', 'Cancelled', and 'No Cars Available' requests in each key problem area, offering a crisp and easy-to-understand view of the prevailing issue (cancellations in the city morning vs. no cars available at the airport evening/night)."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "8zGJKyg5p1ck"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "a2c5cfc5"
+      },
+      "source": [
+        "**Answer**\n",
+        "\n",
+        "Looking at the two pie charts in Chart 11, here are the key insights regarding the supply-demand gap during peak hours:\n",
+        "\n",
+        "**City - Morning Peak (4 AM to 10 AM):**\n",
+        "\n",
+        "*   **High Proportion of Cancellations:** The pie chart for the City during morning peak clearly shows that a significant portion of requests are **Cancelled**. This indicates that even though there is demand, drivers might be unwilling or unable to accept these rides during this busy period, possibly due to traffic or the destination being the airport.\n",
+        "*   **Lower Proportion of \"No Cars Available\":** Compared to cancellations, the percentage of \"No Cars Available\" in the City during morning peak is lower. This suggests that the issue is less about a complete lack of drivers and more about drivers choosing not to take certain requests.\n",
+        "\n",
+        "**Airport - Evening/Night Peak (4 PM to 4 AM):**\n",
+        "\n",
+        "*   **Dominance of \"No Cars Available\":** The pie chart for the Airport during evening/night peak reveals a very high proportion of requests with **\"No Cars Available\"**. This is the most prominent issue at the airport during these hours, indicating a severe shortage of drivers available or willing to pick up passengers from the airport.\n",
+        "*   **Lower Proportion of Cancellations:** Cancellations from the airport during evening/night peak are a much smaller percentage compared to \"No Cars Available.\" This suggests that when a car is available, the trip is likely to be completed, but the primary problem is the lack of available cars.\n",
+        "\n",
+        "**Overall Contrast:** The charts highlight the fundamental difference in the nature of the supply-demand gap at the two key locations during their respective peak times. The City morning peak is characterized by high cancellations, while the Airport evening/night peak is dominated by the lack of available cars."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "PVzmfK_Ep1ck"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "f9fe26fe"
+      },
+      "source": [
+        "**Answer Here**\n",
+        "\n",
+        "Yes, the insights gained from the pie charts showing status distribution during peak hours are highly impactful for creating a positive business impact.\n",
+        "\n",
+        "**Positive Business Impact:**\n",
+        "\n",
+        "*   **Precise Problem Identification:** The charts clearly show *what kind* of supply-demand gap exists at the two most problematic areas during their peak times. Knowing that the City's morning peak issue is primarily cancellations while the Airport's evening/night issue is \"No Cars Available\" allows for precise problem-solving.\n",
+        "*   **Targeted Strategy Development:** This precise identification enables Uber to develop tailored strategies. For the City morning peak, the focus might be on understanding and mitigating driver cancellation reasons (e.g., route preferences, incentives for airport trips). For the Airport evening/night peak, the focus should be on increasing driver supply at the airport (e.g., waiting area improvements, surge pricing strategies, communication about high demand).\n",
+        "*   **Improved Resource Allocation:** The insights directly inform how Uber should allocate its resources (drivers) across time and location. They need more drivers willing to go to the airport in the evening/night and potentially incentives for city drivers to accept morning airport trips.\n",
+        "*   **Enhanced Customer and Driver Experience:** Addressing the root causes of unfulfilled requests in these critical areas will lead to more completed trips, reducing frustration for both riders and drivers and improving overall satisfaction.\n",
+        "\n",
+        "**Insights that lead to negative growth:**\n",
+        "\n",
+        "*   **High Rates of Unfulfilled Requests in Peak Periods:** The large slices representing 'Cancelled' in the City morning peak and 'No Cars Available' in the Airport evening/night peak are direct indicators of significant lost revenue and negative growth. These are times of high demand where a substantial portion of potential business is being missed.\n",
+        "*   **Customer Frustration and Churn:** Customers repeatedly facing cancellations in the morning from the city or being unable to find a car at the airport in the evening/night will become frustrated and are highly likely to use alternative transportation services in the future, leading to a loss of market share and long-term negative growth.\n",
+        "\n",
+        "These charts provide crucial, actionable insights that directly highlight areas of significant negative growth and point towards the specific nature of the problems that need to be addressed for positive business impact."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 12"
+      ],
+      "metadata": {
+        "id": "n3dbpmDWp1ck"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 12 visualization code\n",
+        "# Filter for requests from the Airport\n",
+        "airport_requests_df = df[df['Pickup point'] == 'Airport']\n",
+        "\n",
+        "# Group by time slot and status, then count requests\n",
+        "airport_status_by_timeslot = airport_requests_df.groupby('Time Slot')['Status'].value_counts().unstack().fillna(0)\n",
+        "\n",
+        "# Define the order of time slots\n",
+        "time_slot_order = ['Morning', 'Daytime', 'Evening', 'Night']\n",
+        "airport_status_by_timeslot = airport_status_by_timeslot.reindex(time_slot_order).fillna(0)\n",
+        "\n",
+        "# Plot a stacked bar chart\n",
+        "airport_status_by_timeslot.plot(kind='bar', stacked=True, figsize=(10, 6))\n",
+        "plt.title('Uber Request Status Distribution at Airport by Time Slot')\n",
+        "plt.xlabel('Time Slot')\n",
+        "plt.ylabel('Number of Requests')\n",
+        "plt.xticks(rotation=0)\n",
+        "plt.legend(title='Status')\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "bwevp1tKp1ck"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "ylSl6qgtp1ck"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "77060de3"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "I chose a stacked bar chart to visualize the Uber request status distribution at the Airport by time slot because it effectively shows the total number of requests originating from the Airport during each time slot and how those requests are divided among the different statuses ('Trip Completed', 'Cancelled', and 'No Cars Available'). This allows for a clear comparison of the proportion of unfulfilled requests at the Airport across different times of the day, highlighting when the supply-demand gap is most significant at this specific pickup point."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "ZWILFDl5p1ck"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "c5036a8d"
+      },
+      "source": [
+        "**Answer**\n",
+        "\n",
+        "Looking at the stacked bar chart showing Uber request status distribution at the Airport by time slot, here are the key insights:\n",
+        "\n",
+        "*   **Evening and Night are Major Problem Periods:** The most striking insight is the significantly high number of \"No Cars Available\" requests during the **Evening** and **Night** time slots at the Airport. This clearly indicates a severe shortage of driver supply during these periods when there is high demand from the airport.\n",
+        "*   **\"No Cars Available\" Dominates Unfulfilled Requests:** In the Evening and Night time slots, the \"No Cars Available\" segment is much larger than the \"Cancelled\" segment, highlighting that the primary issue is the lack of available drivers rather than passengers cancelling trips after a driver is assigned.\n",
+        "*   **Morning and Daytime are Relatively Better:** The Morning and Daytime slots at the Airport show a much higher proportion of \"Trip Completed\" requests and significantly fewer unfulfilled requests compared to the Evening and Night. While there are still some \"No Cars Available\" and \"Cancelled\" requests, the imbalance is not as severe.\n",
+        "*   **Demand Peaks in Evening/Night:** The total height of the bars indicates that the overall number of requests from the Airport is highest during the Evening and Night time slots, coinciding with the peak \"No Cars Available\" issue.\n",
+        "\n",
+        "These insights strongly suggest that the critical supply-demand gap at the Airport occurs in the evening and night, primarily driven by a lack of available drivers to meet the high demand for trips from the airport."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "M7G43BXep1ck"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "b7a67817"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "Yes, the insights gained from the stacked bar chart showing request status distribution at the Airport by time slot are highly valuable for creating a positive business impact.\n",
+        "\n",
+        "**Positive Business Impact:**\n",
+        "\n",
+        "*   **Pinpointing Critical Supply Shortages:** The chart precisely identifies that the most severe supply shortage (\"No Cars Available\") at the Airport occurs during the Evening and Night time slots. This allows Uber to focus its efforts and resources specifically on these periods.\n",
+        "*   **Targeted Driver Incentives:** Knowing *when* the driver shortage is most critical at the airport enables Uber to implement targeted incentives (e.g., surge pricing, bonus payments) to encourage drivers to be available at the airport during the evening and night.\n",
+        "*   **Improved Airport Operations:** The insights can inform operational strategies at the airport, such as optimizing driver waiting areas, improving communication with drivers about demand, and potentially collaborating with airport authorities to facilitate pickups during peak hours.\n",
+        "*   **Increased Completed Trips from Airport:** By addressing the supply shortage during peak times, Uber can significantly increase the number of completed trips from the airport, leading to increased revenue and market share for airport transportation.\n",
+        "*   **Enhanced Customer Satisfaction:** Reducing the high number of \"No Cars Available\" instances at the airport will drastically improve the customer experience for travelers arriving during the evening and night, leading to higher satisfaction and loyalty.\n",
+        "\n",
+        "**Insights that lead to negative growth:**\n",
+        "\n",
+        "*   **High \"No Cars Available\" Rate in Evening/Night:** The most significant insight leading to negative growth is the extremely high proportion of \"No Cars Available\" requests at the Airport during the Evening and Night. This represents a substantial amount of lost business and revenue during peak demand periods.\n",
+        "*   **Customer Frustration and Churn:** Travelers arriving at the airport in the evening or night who repeatedly cannot find an Uber due to lack of available cars will become frustrated and are likely to seek alternative transportation (taxis, shuttles, etc.). This leads to customer churn and a loss of future business.\n",
+        "*   **Damage to Brand Reputation:** A reputation for being unreliable at the airport during peak hours can negatively impact Uber's brand image, potentially deterring both new and existing customers from using the service for airport travel or even other trips.\n",
+        "\n",
+        "By clearly identifying the critical time slots at the Airport with severe supply shortages, the insights from this chart are essential for developing strategies to mitigate these negative growth factors and capitalize on the high demand during these periods."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 13"
+      ],
+      "metadata": {
+        "id": "Ag9LCva-p1cl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 13 visualization code\n",
+        "# Filter for requests from the City\n",
+        "city_requests_df = df[df['Pickup point'] == 'City']\n",
+        "\n",
+        "# Group by time slot and status, then count requests\n",
+        "city_status_by_timeslot = city_requests_df.groupby('Time Slot')['Status'].value_counts().unstack().fillna(0)\n",
+        "\n",
+        "# Define the order of time slots\n",
+        "time_slot_order = ['Morning', 'Daytime', 'Evening', 'Night']\n",
+        "city_status_by_timeslot = city_status_by_timeslot.reindex(time_slot_order).fillna(0)\n",
+        "\n",
+        "# Plot a stacked bar chart\n",
+        "city_status_by_timeslot.plot(kind='bar', stacked=True, figsize=(10, 6))\n",
+        "plt.title('Uber Request Status Distribution in City by Time Slot')\n",
+        "plt.xlabel('Time Slot')\n",
+        "plt.ylabel('Number of Requests')\n",
+        "plt.xticks(rotation=0)\n",
+        "plt.legend(title='Status')\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "EUfxeq9-p1cl"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "E6MkPsBcp1cl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5db0ff97"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "I chose a stacked bar chart to visualize the Uber request status distribution in the City by time slot because it effectively shows the total number of requests originating from the City during each time slot and how those requests are divided among the different statuses ('Trip Completed', 'Cancelled', and 'No Cars Available'). This allows for a clear comparison of the proportion of unfulfilled requests in the City across different times of the day, highlighting when the supply-demand gap is most significant at this specific pickup point and the nature of the unfulfilled requests (cancellations vs. no cars available)."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "2cELzS2fp1cl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "b9567ff3"
+      },
+      "source": [
+        "**Answer**\n",
+        "\n",
+        "Looking at the stacked bar chart showing Uber request status distribution in the City by time slot, here are the key insights:\n",
+        "\n",
+        "*   **Morning Peak has High Cancellations:** The most prominent issue in the City is the high number of **Cancelled** requests during the **Morning** time slot (4 AM to 10 AM). This suggests a significant supply-demand mismatch where drivers might be cancelling rides, possibly due to the destination (e.g., not wanting to go to the airport during rush hour) or other factors.\n",
+        "*   **Evening/Night has High \"No Cars Available\" and Completed Trips:** The Evening and Night time slots in the City show a high number of both \"No Cars Available\" requests and \"Trip Completed\" requests. This indicates high overall demand during these periods, and while many trips are completed, there's still a substantial portion where no cars are available, suggesting a general supply constraint during these busy hours.\n",
+        "*   **Daytime is Relatively Balanced:** The Daytime slot in the City appears to have a more balanced distribution of statuses, with a higher proportion of completed trips and fewer unfulfilled requests compared to the peak hours.\n",
+        "*   **Different Problems than Airport:** Comparing this to the Airport chart (Chart 12), the City's morning peak issue is primarily cancellations, whereas the Airport's evening/night issue is predominantly \"No Cars Available.\" This highlights the need for different strategies for each pickup point.\n",
+        "\n",
+        "These insights pinpoint the specific times in the City where the supply-demand gap is most significant and the nature of the problem (cancellations in the morning, general supply constraint in the evening/night)."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 3. Will the gained insights help creating a positive business impact?\n",
+        "Are there any insights that lead to negative growth? Justify with specific reason."
+      ],
+      "metadata": {
+        "id": "3MPXvC8up1cl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "58b39272"
+      },
+      "source": [
+        "**Answer **\n",
+        "\n",
+        "Yes, the insights gained from the stacked bar chart showing request status distribution in the City by time slot are highly valuable for creating a positive business impact.\n",
+        "\n",
+        "**Positive Business Impact:**\n",
+        "\n",
+        "*   **Targeted Solutions:** The chart precisely identifies the most critical time slot in the City (Morning) and the primary issue during that time (cancellations). This allows Uber to develop targeted strategies to address driver behavior or incentives during the morning peak in the City. It also shows that in the Evening/Night, while many trips are completed, there's a general supply constraint, indicating a need for more drivers during those hours.\n",
+        "*   **Improved Resource Allocation:** Knowing the specific time slots and the nature of the problem in the City enables more efficient allocation of drivers. Uber can focus on reducing cancellations in the morning and increasing overall driver supply in the evening/night.\n",
+        "*   **Enhanced Customer Experience:** Addressing the high cancellation rate in the City morning peak and reducing \"No Cars Available\" instances in the evening/night will improve the reliability of Uber's service in the city, leading to higher customer satisfaction.\n",
+        "\n",
+        "**Insights that lead to negative growth:**\n",
+        "\n",
+        "*   **High Cancellation Rate in City Morning Peak:** The significant number of cancelled requests in the City during the Morning peak represents substantial lost revenue and negative growth. These are instances where demand exists but is not being met due to driver behavior or other factors leading to cancellations.\n",
+        "*   **\"No Cars Available\" in City Evening/Night:** While not as severe as at the Airport, the presence of a significant number of \"No Cars Available\" requests in the City during the Evening and Night also represents lost business and potential customer frustration, contributing to negative growth.\n",
+        "*   **Customer Churn:** Customers who repeatedly experience cancellations or difficulty finding a car in the City during peak hours may become frustrated and choose alternative transportation, leading to a loss of market share.\n",
+        "\n",
+        "By clearly identifying the critical time slots in the City and the specific nature of the supply-demand gap, the insights from this chart are essential for developing strategies to mitigate these negative growth factors and improve service efficiency."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer Here"
+      ],
+      "metadata": {
+        "id": "GL8l1tdLp1cl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 14 - Correlation Heatmap"
+      ],
+      "metadata": {
+        "id": "NC_X3p0fY2L0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Correlation Heatmap visualization code\n",
+        "# Select only numerical columns for correlation analysis\n",
+        "numerical_cols = df.select_dtypes(include=np.number).columns\n",
+        "\n",
+        "# Calculate the correlation matrix\n",
+        "correlation_matrix = df[numerical_cols].corr()\n",
+        "\n",
+        "# Create the heatmap\n",
+        "plt.figure(figsize=(10, 8))\n",
+        "sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=\".2f\", linewidths=.5)\n",
+        "plt.title('Correlation Heatmap of Numerical Variables')\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "xyC9zolEZNRQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "UV0SzAkaZNRQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "48a846f6"
+      },
+      "source": [
+        "**Answer**\n",
+        "\n",
+        "I chose a correlation heatmap to visualize the relationships between the numerical variables in the dataset because a heatmap is an effective way to display a correlation matrix. The color intensity and the annotated values in the heatmap make it easy to quickly identify the strength and direction of the linear correlation between each pair of numerical variables. This helps in understanding which numerical factors might be related to each other."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "YPEH6qLeZNRQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5049136d"
+      },
+      "source": [
+        "**Answer**\n",
+        "\n",
+        "Looking at the correlation heatmap of the numerical variables, here are the key insights:\n",
+        "\n",
+        "*   **Strong positive correlation between 'Request id' and 'Request Month':** There is a strong positive correlation (around 0.87) between 'Request id' and 'Request Month'. This is expected as 'Request id' likely increases sequentially with each new request, and the data spans across two different months (November and December). As time progresses, both the Request ID and the month value increase, leading to this correlation.\n",
+        "*   **Moderate positive correlation between 'Request id' and 'Request hour':** There is a moderate positive correlation (around 0.49) between 'Request id' and 'Request hour'. This also makes sense as requests within a day are likely ordered sequentially, and as the day progresses (higher request hour), the Request ID will generally increase.\n",
+        "*   **Moderate positive correlation between 'Request hour' and 'Trip Duration':** There is a moderate positive correlation (around 0.22) between 'Request hour' and 'Trip Duration'. This suggests that trips might tend to be slightly longer during later hours of the day. This could be influenced by factors like traffic patterns that change throughout the day.\n",
+        "*   **Weak or negligible correlations:** Most other numerical variable pairs show weak or negligible correlations (values close to 0). This includes the correlation between 'Driver id' and other variables, as well as the correlation between 'Request Month' and 'Trip Duration'. The correlation between 'Request Year' and other variables is not available because there is only one unique year in the dataset (2016).\n",
+        "*   **Missing Data Impact:** The heatmap also implicitly shows the impact of missing data, as the 'Request Year' column has no variation, resulting in NaN correlations with other variables.\n",
+        "\n",
+        "Overall, the heatmap reveals some expected correlations related to the sequential nature of request IDs and the time of the request, as well as a slight positive correlation between request hour and trip duration. It also highlights that 'Driver id' does not have a strong linear relationship with the other numerical variables in this dataset."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Chart - 15 - Pair Plot"
+      ],
+      "metadata": {
+        "id": "q29F0dvdveiT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Chart - 15 visualization code\n",
+        "# Box plot of Trip Duration by Time Slot for completed trips\n",
+        "plt.figure(figsize=(10, 6))\n",
+        "sns.boxplot(data=completed_trips_df, x='Time Slot', y='Trip Duration', order=['Morning', 'Daytime', 'Evening', 'Night'])\n",
+        "plt.title('Distribution of Trip Durations by Time Slot (Completed Trips)')\n",
+        "plt.xlabel('Time Slot')\n",
+        "plt.ylabel('Trip Duration (minutes)')\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "o58-TEIhveiU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 1. Why did you pick the specific chart?"
+      ],
+      "metadata": {
+        "id": "EXh0U9oCveiU"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "a2bd8eb2"
+      },
+      "source": [
+        "**Answer Here.**\n",
+        "\n",
+        "I chose a pair plot to visualize the relationships between the numerical variables in the dataset because it provides a matrix of scatter plots showing the relationship between each pair of numerical variables, as well as histograms on the diagonal showing the distribution of each individual variable. This allows for a quick overview of potential correlations, patterns, and distributions among all numerical variables simultaneously."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### 2. What is/are the insight(s) found from the chart?"
+      ],
+      "metadata": {
+        "id": "22aHeOlLveiV"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ba9b22a7"
+      },
+      "source": [
+        "**Answer Here**\n",
+        "\n",
+        "Looking at the box plot showing the distribution of trip durations by time slot for completed trips, here are some potential insights:\n",
+        "\n",
+        "*   **Variation in Median Trip Duration:** The median trip duration (the line inside the box) appears to vary across the different time slots. This suggests that the typical length of a completed Uber trip is not consistent throughout the day.\n",
+        "*   **Spread of Trip Durations:** The length of the boxes (interquartile range) and the whiskers indicate the variability in trip durations within each time slot. Some time slots might have a wider spread of trip lengths than others.\n",
+        "*   **Presence of Outliers:** The points outside the whiskers represent potential outliers, which are unusually long trips. The number and distribution of these outliers can also vary by time slot.\n",
+        "*   **Potential for Longer Trips in Certain Slots:** Based on the median and the upper quartile, some time slots (e.g., Evening or Night) might tend to have slightly longer completed trips on average compared to others, possibly due to factors like traffic or longer distances traveled during those times.\n",
+        "\n",
+        "These insights help in understanding how trip lengths are distributed throughout the day for completed rides, which can be useful for estimating arrival times and optimizing driver schedules."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **5. Solution to Business Objective**"
+      ],
+      "metadata": {
+        "id": "JcMwzZxoAimU"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### What do you suggest the client to achieve Business Objective ?\n",
+        "Explain Briefly."
+      ],
+      "metadata": {
+        "id": "8G2x9gOozGDZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9a6a077a"
+      },
+      "source": [
+        "**Answer**\n",
+        "\n",
+        "To achieve the business objective of reducing the Uber supply-demand gap, particularly for airport transportation, the client should focus on targeted strategies based on the identified peak problem areas:\n",
+        "\n",
+        "1.  **Address Morning Peak Cancellations in the City:** Investigate the reasons behind high driver cancellations in the City during morning rush hours. This could involve incentives for drivers accepting airport trips from the city, optimizing routing to minimize travel time during peak traffic, or communicating expected trip durations more clearly.\n",
+        "2.  **Increase Driver Supply at the Airport During Evening/Night Peak:** Implement strategies to significantly increase the number of available drivers at the Airport during the evening and night time slots, where the \"No Cars Available\" issue is most severe. This could include surge pricing incentives during these hours, creating better waiting facilities for drivers at the airport, or using predictive modeling to anticipate demand and position drivers proactively.\n",
+        "3.  **Improve Communication and Transparency:** Enhance communication with both drivers and riders about expected wait times and potential surge pricing during peak hours and at high-demand locations like the airport. This can help manage expectations and reduce cancellations.\n",
+        "4.  **Analyze Driver Behavior:** Conduct further analysis on driver behavior during peak hours and at critical locations to understand why requests are being cancelled or not accepted (e.g., trip distance, destination, driver location relative to the request)."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Conclusion**"
+      ],
+      "metadata": {
+        "id": "gCX9965dhzqZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8ea0fd5c"
+      },
+      "source": [
+        "**Conclusion**\n",
+        "\n",
+        "Based on the exploratory data analysis of the Uber request data, the following key conclusions can be drawn regarding the supply-demand gap:\n",
+        "\n",
+        "1.  **Significant Unfulfilled Demand:** A substantial portion of Uber requests remain unfulfilled, primarily due to cancellations and the lack of available cars. This highlights a significant gap between the demand for Uber rides and the available supply.\n",
+        "2.  **Peak Hour Imbalances:** The supply-demand gap is particularly severe during specific peak hours. The morning rush hour (roughly 4 AM to 10 AM) in the City experiences a high rate of cancellations, suggesting drivers might be reluctant to accept certain trips during this busy period, possibly due to traffic or destination. The evening and night hours (roughly 4 PM to 4 AM) at the Airport suffer from a critical shortage of available cars, indicating insufficient driver supply to meet the high demand from arriving passengers.\n",
+        "3.  **Location-Specific Problems:** The nature of the supply-demand gap differs between pickup locations. The City's main issue during its peak is cancellations, while the Airport's main issue during its peak is the lack of available vehicles.\n",
+        "4.  **Limited Data Scope:** The analysis was limited by the availability of data for only two specific dates (November 7th and December 7th, 2016) and only two days of the week (Monday and Wednesday). A more comprehensive dataset spanning a longer period and covering all days of the week would be beneficial for identifying broader trends and seasonal patterns.\n",
+        "\n",
+        "**Recommendations to address the gap:**\n",
+        "\n",
+        "*   Implement targeted incentives to encourage drivers to be available in the City during morning peak hours and at the Airport during evening/night peak hours.\n",
+        "*   Investigate the specific reasons for driver cancellations in the City during the morning and address those factors (e.g., improve routing algorithms, manage rider expectations on wait times for certain destinations).\n",
+        "*   Optimize driver positioning and allocation strategies, particularly at the Airport during evening and night, potentially using predictive analytics to anticipate demand.\n",
+        "*   Improve communication with both drivers and riders regarding expected demand, surge pricing, and potential wait times during peak periods.\n",
+        "\n",
+        "Addressing these specific issues at the identified critical times and locations is crucial for reducing the supply-demand gap, improving operational efficiency, and enhancing customer satisfaction for Uber's services, especially for airport transportation."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### ***Hurrah! You have successfully completed your EDA UBER SUPPLY DEMAND GAP !!!***"
+      ],
+      "metadata": {
+        "id": "gIfDvo9L0UH2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "dYX880etpL0x"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "-6Vl263upPVI"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
